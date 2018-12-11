@@ -44,7 +44,7 @@ window.onload=function(){
 
   document.querySelector("input").addEventListener("input", function () {
     binary_to_hex();
-    console.log(result);
+    // console.log(result);
     document.querySelector("#result").innerHTML = result;
   })
 
