@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Binary to Hexadecimal</title>
+  <meta name="description" content="Simply convert binary to legible hexadecimal.">
+  <meta name="theme-color" content="#000000">
+  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5%;
+  }
+
+  *:focus {outline:none}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+  span#left {
+    float: left
+  }
+
+  span#right {
+    float: right;
+  }
+
+  a {
+    color: white;
+    transition: color .5s;
+  }
+
+  a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  header {
+    text-align: left;
+    padding-bottom: 80px;;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  #head {
+    border-top: 3px solid white;
+    padding-top: 20px;
+  }
+
+  form  {
+    width: 100%;
+  }
+  #binary {
+    background: black;
+    border: 3px solid white;
+    padding: 15px 15px;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+  }
+  
+  #prefix {
+    color: red;
+    font-size: 30px;
+  }
+
+  #result {
+    font-size: 30px;
+    margin: 0;
+    display: inline;
+  }
+
+
+  @media screen and (max-width: 935px) {
+    br {
+      display: block;
+      margin-bottom: 39px;
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+    header {
+      padding-bottom: 50px;
+    }
+
+    header span {
+      width: 40%;
+    }
+
+    #left {
+      display: inline-grid;
+    }
+
+    #right {
+      display: inline-grid;
+    }
+  }
+</style>
+<body>
+  <header>
+    <span id="left">Binary to Hexadecimal</span>
+    <span id="right">Tooling</span>
+    <p>
+  </header>
+  <p><em>In mathematics and computing, hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. It uses sixteen distinct symbols, most often the symbols 0–9 to represent values zero to nine, and A–F (or alternatively a–f) to represent values ten to fifteen.</em></p> 
+  <p><em>Hexadecimal numerals are widely used by computer system designers and programmers, as they provide a more human-friendly representation of binary-coded values. Each hexadecimal digit represents four binary digits, also known as a nibble, which is half a byte. For example, a single byte can have values ranging from 0000 0000 to 1111 1111 in binary form, which can be more conveniently represented as 00 to FF in hexadecimal.</em></p>
+  <small><a href="https://en.wikipedia.org/wiki/Hexadecimal">Wikpedia</a></small>
+  <main>
+    <p id="head">Enter binary: </p>
+    <form>
+      <label for="binary"></label>
+      <input type="text" id="binary" name="binary" value="01000110101000101011100100111101">
+    </form>
+    <p>Hexadecimal result </p>
+    <span id="prefix">0x</span><p id="result">46A2B93D</p>
+  </main>
+<script src="convert.js"></script>
+</body>
+</html>
+
