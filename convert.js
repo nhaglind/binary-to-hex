@@ -14,6 +14,7 @@ window.onload=function(){
       var z = parseInt(group[i][3]) * 1;
       var t = parseInt(w + x + y + z);
       hex_a.push(t);
+      console.log(hex_a);
     }
     for (let j = 0; j < hex_a.length; j++) {
       switch (hex_a[j]) {
@@ -31,6 +32,7 @@ window.onload=function(){
           break;
         case 14:
           hex_a[j] = 'E';
+          break;
         case 15:
           hex_a[j] = 'F';
           break;
